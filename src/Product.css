@@ -1,0 +1,15 @@
+.product {
+  max-width: 150px;
+  height: 400px;
+  margin: 10px;
+}
+.img_class {
+  max-height: 200px;
+  max-width: 150px;
+}
+.img_div {
+  background-color: black;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
