@@ -3,10 +3,7 @@ import { useCartContext } from './context'
 
 function Header(props) {
   const items = props.items
-  // console.log(globalState.state.cart);
-  console.log(useCartContext);
   const [totalPrice, setTotalPrice, totalItems, setTotalItems] = useCartContext()
-  // console.log();
   return (
     <>
       <div className="header">
@@ -14,7 +11,7 @@ function Header(props) {
           <div>
             Cart:{totalItems}
           </div>
-          Price:{totalPrice}
+            Price:{totalPrice}
         </h1>
       </div>
     </>
