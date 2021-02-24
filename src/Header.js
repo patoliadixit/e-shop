@@ -3,15 +3,15 @@ import { useCartContext } from './context'
 
 function Header(props) {
   const items = props.items
-  const [totalPrice, setTotalPrice, totalItems, setTotalItems] = useCartContext()
+  const [state, dispatch] = useCartContext()
   return (
     <>
       <div className="header">
         <h1>
           <div>
-            Cart:{totalItems}
+            Cart:{state.totalItems}
           </div>
-            Price:{totalPrice}
+            Price:{state.totalPrice}
         </h1>
       </div>
     </>
